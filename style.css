@@ -35,3 +35,32 @@ input {
   height: 500px;
   border: none;
 }
+#lyrics {
+  transition: opacity 0.8s ease-in-out;
+  opacity: 1;
+}
+
+#lyrics.fade {
+  opacity: 0.2;
+}
+
+.element {
+  display: inline-block;
+  margin: 4px;
+  padding: 6px 10px;
+  background: #222;
+  color: #fff;
+  border-radius: 8px;
+  font-family: 'Courier New', monospace;
+  transition: background 0.3s ease;
+}
+@keyframes fadein {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+#geniusFrame {
+  margin-top: 20px;
+  width: 100%;
+  height: 500px;
+  border: none;
+}
