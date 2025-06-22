@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Periodic Lyrics Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://www.youtube.com/iframe_api"></script>
+</head>
+<body>
+  <h1>🎶 Periodic Lyrics Visualizer</h1>
+  <input type="text" id="artist" placeholder="Enter artist name">
+  <input type="text" id="title" placeholder="Enter song title">
+  <button onclick="loadSong()">Play Song & Show Lyrics</button>
+
+  <div id="lyrics"></div>
+  <iframe id="geniusFrame" style="display:none;"></iframe>
+
+  <!-- Hidden YouTube Player -->
+  <div id="player"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
