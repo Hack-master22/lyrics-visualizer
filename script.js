@@ -7,14 +7,14 @@ function onYouTubeIframeAPIReady() {
     height: '0',
     width: '0',
     events: {
-      'onReady': onPlayerReady
+      'onReady': event => {
+        // autoplay when ready
+        player.playVideo();
+      }
     }
   });
 }
 
-function onPlayerReady(event) {
-  // optional auto-play setup
-}
 
 async function loadSong() {
   const artist = document.getElementById('artist').value;
